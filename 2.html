@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+      //  type of function
+      /*
+            named function
+              anonymous function
+             function  Expressions
+             Arrow function
+             iife
+              callback function
+              high order function
+              */
+
+      <!------------------------------------------------------>
+      //   name function
+      //  function  Declaration
+
+      // function sum(){
+      // return  a+b;
+      //
+      // };
+      // console.log(add(5,6));
+      // output 8
+
+      // Anonymous function
+      //   ***********************************************************
+      //   console.log(
+      // (function (a, b) {
+      //   return a * b;
+      // })(4, 5)
+      //   );
+      //     Anonymous  function  Expression
+      // *****************************************************************
+      // const Add =function (a,b){
+      // return a+b;
+      // };
+      // console.log(Add(5,6));
+      //  output 8
+      // named function Expression
+      //  const  add =function sum(a,b){
+      // return a=b;
+      //  };
+      //   console.log(add(5,3));
+      //   output :8
+      //*****************************************************************
+      //   Arrow  function  in js
+
+      //  function add(x,y)
+      //   {
+      // return X + y;
+      // }
+      //  console.log(add(5,3));
+      //   output :8
+      //   Arrow  function
+      //   const add =(x,y) = x+y;
+      //  console.log(add(5,3));
+      //  output :8
+      //****************************************************************
+      //  call back function
+      //   function add(x, y) {
+      //     return x + y;
+      //   }
+      //   let a = 3,
+      //     b = 5;
+      //   let result = add(a, b);
+      //   console.log(result);
+      //    output :8
+
+      //   function add(x, y) {
+      // return x + y;
+      //   }
+      //   function multiply(x, y) {
+      // return x * y;
+      //   }
+      //   function substract(x, y) {
+      // return x - y;
+      //   }
+      //   function divide(x, y) {
+      // return x / y;
+      //   }
+      //   function display(x, y, operation) {
+      // var result = operation(x, y);
+      // console.log(result);
+      //   }
+      //   output :8
+      //   display(10, 5, add);
+      //   display(10, 5, multiply);
+      //   display(10, 5, substract);
+      //   display(10, 5, divide);
+      // ********************************************************************************
+      // when  to use   call back function in real application ?
+
+      // 1. iteration
+      // 2. Event handling
+      // 3. Asynchronous operation
+      // 4. higher-order  function
+      // 5. promises
+
+      // 1. iteration   for each method
+      //   const number = [1, 2, 3, 4];
+      //   function logNumber(Number) {
+      // console.log(number);
+      //   }
+      //   number.forEach(logNumber);
+
+      // high order Function
+
+      //     take  one or more  function  as argument (callback function)
+      //    return a function  as a result
+
+      //   function hof(func) {
+      // func();
+      //   }
+      //   hof(sayHello);
+      //   function sayHello() {
+      // console.log("hello");
+      //   }
+      // output  "hello"
+
+      //   function createAdder(number) {
+      // return function (value) {
+      //   return value + number;
+      // };
+      //   }
+
+      //   const AddFIve = createAdder(5);
+      //   console.log(AddFIve(2));
+    </script>
+  </body>
+</html>
